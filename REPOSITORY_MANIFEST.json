@@ -1,0 +1,437 @@
+{
+  "file_count": 108,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 867
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 396
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 402
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 288
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 381
+    },
+    {
+      "path": "README.md",
+      "bytes": 5161
+    },
+    {
+      "path": "aido_bba/__init__.py",
+      "bytes": 62
+    },
+    {
+      "path": "aido_bba/config.py",
+      "bytes": 2818
+    },
+    {
+      "path": "aido_bba/demo_pipeline.py",
+      "bytes": 14028
+    },
+    {
+      "path": "aido_bba/demo_schema.py",
+      "bytes": 5794
+    },
+    {
+      "path": "configs/config.example.json",
+      "bytes": 614
+    },
+    {
+      "path": "demo/README.md",
+      "bytes": 666
+    },
+    {
+      "path": "demo/demo_clinical.csv",
+      "bytes": 773
+    },
+    {
+      "path": "demo/demo_config.json",
+      "bytes": 400
+    },
+    {
+      "path": "demo/demo_expression.csv",
+      "bytes": 17052
+    },
+    {
+      "path": "demo/demo_gene_sets.csv",
+      "bytes": 503
+    },
+    {
+      "path": "demo/expected_outputs/expected_schema.json",
+      "bytes": 558
+    },
+    {
+      "path": "demo/expected_outputs/expected_summary.json",
+      "bytes": 366
+    },
+    {
+      "path": "demo/run_demo.py",
+      "bytes": 1075
+    },
+    {
+      "path": "docs/DATA_LAYOUT.md",
+      "bytes": 1199
+    },
+    {
+      "path": "docs/OUTPUT_CONTRACT.md",
+      "bytes": 647
+    },
+    {
+      "path": "docs/PIPELINE.md",
+      "bytes": 1221
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 232
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_CELL30_RECOMMENDATION_SPECIFICITY_AUDIT.py",
+      "bytes": 24969
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_FINAL_EXPERIMENTS_FULL.ipynb",
+      "bytes": 119964
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_FINAL_EXPERIMENTS_FULL.py",
+      "bytes": 73340
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_FINAL_EXPERIMENTS_FULL_V4.py",
+      "bytes": 78100
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_PART_C_METABRIC_STRESS_FULL.py",
+      "bytes": 36515
+    },
+    {
+      "path": "legacy/AIDO_BBA_BRCA_PART_D_GSE96058_EXTERNAL_STRESS_FULL.py",
+      "bytes": 45036
+    },
+    {
+      "path": "legacy/AIDO_BBA_KIRC_PORTABILITY_AUDIT_FULL_V2.ipynb",
+      "bytes": 113155
+    },
+    {
+      "path": "legacy/AIDO_BBA_KIRC_PORTABILITY_AUDIT_FULL_V2.py",
+      "bytes": 64163
+    },
+    {
+      "path": "legacy/AIDO_BBA_KIRC_PORTABILITY_AUDIT_FULL_V3_STRICT_ENDPOINT.ipynb",
+      "bytes": 121398
+    },
+    {
+      "path": "legacy/AIDO_BBA_KIRC_PORTABILITY_AUDIT_FULL_V3_STRICT_ENDPOINT.py",
+      "bytes": 69127
+    },
+    {
+      "path": "legacy/Cell1-12.py",
+      "bytes": 37594
+    },
+    {
+      "path": "legacy/Cell1.py",
+      "bytes": 2763
+    },
+    {
+      "path": "legacy/Cell10.py",
+      "bytes": 6741
+    },
+    {
+      "path": "legacy/Cell11.py",
+      "bytes": 7497
+    },
+    {
+      "path": "legacy/Cell12.py",
+      "bytes": 8899
+    },
+    {
+      "path": "legacy/Cell13.py",
+      "bytes": 14374
+    },
+    {
+      "path": "legacy/Cell14.py",
+      "bytes": 1250
+    },
+    {
+      "path": "legacy/Cell15.py",
+      "bytes": 9418
+    },
+    {
+      "path": "legacy/Cell16.py",
+      "bytes": 18972
+    },
+    {
+      "path": "legacy/Cell17.py",
+      "bytes": 15842
+    },
+    {
+      "path": "legacy/Cell18.py",
+      "bytes": 18053
+    },
+    {
+      "path": "legacy/Cell19.py",
+      "bytes": 50116
+    },
+    {
+      "path": "legacy/Cell2.py",
+      "bytes": 3782
+    },
+    {
+      "path": "legacy/Cell20.py",
+      "bytes": 20013
+    },
+    {
+      "path": "legacy/Cell21.py",
+      "bytes": 42529
+    },
+    {
+      "path": "legacy/Cell21B.py",
+      "bytes": 7550
+    },
+    {
+      "path": "legacy/Cell22.py",
+      "bytes": 23860
+    },
+    {
+      "path": "legacy/Cell23.py",
+      "bytes": 31027
+    },
+    {
+      "path": "legacy/Cell24.py",
+      "bytes": 34064
+    },
+    {
+      "path": "legacy/Cell25.py",
+      "bytes": 44768
+    },
+    {
+      "path": "legacy/Cell26.py",
+      "bytes": 41219
+    },
+    {
+      "path": "legacy/Cell27.py",
+      "bytes": 42869
+    },
+    {
+      "path": "legacy/Cell28.py",
+      "bytes": 32896
+    },
+    {
+      "path": "legacy/Cell29.py",
+      "bytes": 26621
+    },
+    {
+      "path": "legacy/Cell3.py",
+      "bytes": 767
+    },
+    {
+      "path": "legacy/Cell4.py",
+      "bytes": 1942
+    },
+    {
+      "path": "legacy/Cell5.py",
+      "bytes": 5600
+    },
+    {
+      "path": "legacy/Cell6.py",
+      "bytes": 7971
+    },
+    {
+      "path": "legacy/Cell7.py",
+      "bytes": 3225
+    },
+    {
+      "path": "legacy/Cell8.py",
+      "bytes": 10523
+    },
+    {
+      "path": "legacy/Cell9.py",
+      "bytes": 4809
+    },
+    {
+      "path": "notebooks/01_primary_brca_audit.ipynb",
+      "bytes": 915366
+    },
+    {
+      "path": "notebooks/04_kirc_cancer_type_replacement.ipynb",
+      "bytes": 121398
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 41
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 33
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 132
+    },
+    {
+      "path": "scripts/external/04_metabric_dataset_replacement.py",
+      "bytes": 36606
+    },
+    {
+      "path": "scripts/external/05_gse96058_endpoint_replacement.py",
+      "bytes": 45160
+    },
+    {
+      "path": "scripts/external/06_kirc_cancer_type_replacement.py",
+      "bytes": 69166
+    },
+    {
+      "path": "scripts/primary_brca/01_cell1.py",
+      "bytes": 2796
+    },
+    {
+      "path": "scripts/primary_brca/02_cell2.py",
+      "bytes": 3787
+    },
+    {
+      "path": "scripts/primary_brca/03_cell3.py",
+      "bytes": 917
+    },
+    {
+      "path": "scripts/primary_brca/04_cell4.py",
+      "bytes": 2043
+    },
+    {
+      "path": "scripts/primary_brca/05_cell5.py",
+      "bytes": 5538
+    },
+    {
+      "path": "scripts/primary_brca/06_cell6.py",
+      "bytes": 7839
+    },
+    {
+      "path": "scripts/primary_brca/07_cell7.py",
+      "bytes": 3260
+    },
+    {
+      "path": "scripts/primary_brca/08_cell8.py",
+      "bytes": 10244
+    },
+    {
+      "path": "scripts/primary_brca/09_cell9.py",
+      "bytes": 4777
+    },
+    {
+      "path": "scripts/primary_brca/10_cell10.py",
+      "bytes": 6658
+    },
+    {
+      "path": "scripts/primary_brca/11_cell11.py",
+      "bytes": 7368
+    },
+    {
+      "path": "scripts/primary_brca/12_cell12.py",
+      "bytes": 8742
+    },
+    {
+      "path": "scripts/primary_brca/13_cell13.py",
+      "bytes": 13948
+    },
+    {
+      "path": "scripts/primary_brca/14_cell14.py",
+      "bytes": 1379
+    },
+    {
+      "path": "scripts/primary_brca/15_cell15.py",
+      "bytes": 9187
+    },
+    {
+      "path": "scripts/primary_brca/16_cell16.py",
+      "bytes": 18322
+    },
+    {
+      "path": "scripts/primary_brca/17_cell17.py",
+      "bytes": 15329
+    },
+    {
+      "path": "scripts/primary_brca/18_cell18.py",
+      "bytes": 17510
+    },
+    {
+      "path": "scripts/primary_brca/19_cell19.py",
+      "bytes": 47924
+    },
+    {
+      "path": "scripts/primary_brca/20_cell20.py",
+      "bytes": 19141
+    },
+    {
+      "path": "scripts/primary_brca/21_cell21.py",
+      "bytes": 40723
+    },
+    {
+      "path": "scripts/primary_brca/22_cell21b.py",
+      "bytes": 7415
+    },
+    {
+      "path": "scripts/primary_brca/23_cell22.py",
+      "bytes": 22801
+    },
+    {
+      "path": "scripts/primary_brca/24_cell23.py",
+      "bytes": 29625
+    },
+    {
+      "path": "scripts/primary_brca/25_cell24.py",
+      "bytes": 32433
+    },
+    {
+      "path": "scripts/primary_brca/26_cell25.py",
+      "bytes": 42665
+    },
+    {
+      "path": "scripts/primary_brca/27_cell26.py",
+      "bytes": 39375
+    },
+    {
+      "path": "scripts/primary_brca/28_cell27.py",
+      "bytes": 40964
+    },
+    {
+      "path": "scripts/primary_brca/29_cell28.py",
+      "bytes": 31455
+    },
+    {
+      "path": "scripts/primary_brca/30_cell29.py",
+      "bytes": 25615
+    },
+    {
+      "path": "scripts/recommendation/02_recommendation_specificity_audit.py",
+      "bytes": 25130
+    },
+    {
+      "path": "scripts/recommendation/03_recommendation_null_audit.py",
+      "bytes": 78135
+    },
+    {
+      "path": "tests/test_config.py",
+      "bytes": 151
+    },
+    {
+      "path": "tests/test_demo_deterministic.py",
+      "bytes": 1967
+    },
+    {
+      "path": "tests/test_demo_failures.py",
+      "bytes": 1438
+    },
+    {
+      "path": "tests/test_demo_schema.py",
+      "bytes": 3105
+    }
+  ]
+}

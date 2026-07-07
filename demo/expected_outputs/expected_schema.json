@@ -1,0 +1,28 @@
+{
+  "patient_reliability.csv": [
+    "patient_id",
+    "true_label",
+    "mean_prob_logistic",
+    "mean_prob_extratrees",
+    "cross_model_difference",
+    "resampling_sd_logistic",
+    "resampling_sd_extratrees",
+    "model_disagreement"
+  ],
+  "oof_probabilities.csv": [
+    "patient_id",
+    "repeat",
+    "fold",
+    "model",
+    "true_label",
+    "oof_probability",
+    "predicted_label"
+  ],
+  "representation_audit.csv": [
+    "n_genes",
+    "n_represented_genes",
+    "n_gap_genes",
+    "absolute_contribution_coverage",
+    "signed_residual"
+  ]
+}

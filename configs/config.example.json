@@ -1,0 +1,12 @@
+{
+  "data_root": "D:/AIDO-Data",
+  "brca_output_root": "D:/AIDO-Temp/AIDO_BBA_BRCA_1_0",
+  "kirc_output_root": "D:/AIDO-Temp/AIDO_BBA_KIRC_1_0",
+  "brca_run_dir": "D:/AIDO-Temp/AIDO_BBA_BRCA_1_0/RUN_BASELINE_GE_STAGE_YYYYMMDD_HHMMSS",
+  "go_bp_gmt": "D:/AIDO-Data/GSEA/c5.go.bp.v2026.1.Hs.symbols.gmt",
+  "hgnc_file": "D:/AIDO-Data/HGNC/hgnc_complete_set.txt",
+  "ncbi_gene_info": "D:/AIDO-Data/NCBI_Gene/Homo_sapiens.gene_info",
+  "metabric_dir": "D:/AIDO-Data/External/brca_metabric",
+  "gse96058_dir": "D:/AIDO-Data/External/GSE96058",
+  "kirc_dir": "D:/AIDO-Data/UCSC_XENA/Kidney Clear Cell Carcinoma (KIRC)"
+}

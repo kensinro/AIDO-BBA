@@ -1,0 +1,16 @@
+{
+  "seed": 20260707,
+  "expression_path": "demo/demo_expression.csv",
+  "clinical_path": "demo/demo_clinical.csv",
+  "gene_set_path": "demo/demo_gene_sets.csv",
+  "output_dir": "demo/demo_outputs",
+  "gene_id_column": "gene_id",
+  "patient_id_column": "patient_id",
+  "endpoint_column": "stage_group",
+  "class_mapping": {
+    "early": 0,
+    "advanced": 1
+  },
+  "cv_folds": 3,
+  "cv_repeats": 2
+}
