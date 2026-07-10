@@ -1,0 +1,37 @@
+name: AIDO-BBA CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Run automated tests
+        run: pytest -q
+
+      - name: Run compact demonstration
+        run: python demo/run_demo.py
+
+      - name: Verify expected outputs
+        run: |
+          test -f demo/demo_outputs/run_manifest.json
+          test -f demo/demo_outputs/patient_reliability.csv
+          test -f demo/demo_outputs/representation_audit.csv
+          test -f demo/demo_outputs/demo_summary.json
