@@ -4,7 +4,7 @@ AIDO-BBA is a reproducible computational audit workflow for separating aggregate
 
 ## Scientific scope
 
-The repository accompanies the manuscript **“A modular computational audit program for explanatory completeness, representation gaps, and patient-level ambiguity in cancer transcriptomic classification.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit outputs are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, clinical directives, or demonstrated clinical utility.
+The repository accompanies the manuscript **“A modular computational audit framework for black-box transcriptomic classifiers: patient-level disagreement, explanatory completeness, and representation gaps.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit outputs are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, clinical directives, or demonstrated clinical utility.
 
 The 2026-10-04 repair line corrects several manuscript-facing definitions while preserving historical execution provenance. The repaired contract is documented in [`docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md`](docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md) and encoded in [`aido_bba/audit_contract.py`](aido_bba/audit_contract.py). In particular:
 
@@ -121,7 +121,7 @@ The repository does **not** redistribute TCGA, METABRIC, GSE96058, GO/MSigDB, HG
 
 ## Citation and release status
 
-See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The current repair branch targets v1.1.0, but no v1.1.0 tag, GitHub release, or archival DOI should be treated as final until release conformance is explicitly closed.
+See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The repaired scientific line is integrated into `main` and is covered by passing continuous integration. Metadata target v1.1.0, but no v1.1.0 tag, GitHub release, or archival DOI should be treated as final until those release objects are explicitly created and verified.
 
 ## License
 
