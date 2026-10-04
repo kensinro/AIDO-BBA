@@ -1,14 +1,13 @@
 {
-  "title": "AIDO-BBA v1.0.0",
+  "title": "AIDO-BBA v1.1.0",
   "upload_type": "software",
-  "description": "A configuration-driven biomedical audit workflow for evaluating patient-level model reliability, attribution reconstruction, biological-representation completeness, representation-gap structure, fuzzy explanatory allocation, measurement-output specificity, and replacement stress-test portability.",
+  "description": "A configuration-driven biomedical computational audit workflow for separating predictive, resampling, representation, residual, fuzzy-allocation, and output-specificity uncertainty. The software is an audit and evidence-boundary framework, not a clinical decision-support or treatment-recommendation system.",
   "creators": [
     {
       "name": "Kong, Sin Guan",
       "affiliation": "Universiti Tunku Abdul Rahman"
     }
   ],
-  "license": "MIT",
   "keywords": [
     "computational audit",
     "biomedical software",
@@ -18,7 +17,7 @@
     "patient-level uncertainty",
     "black-box audit"
   ],
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "related_identifiers": [
     {
       "identifier": "https://github.com/kensinro/AIDO-BBA",

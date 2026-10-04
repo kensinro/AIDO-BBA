@@ -1,16 +1,25 @@
 # AIDO-BBA: modular black-box audit for cancer transcriptomic classification
 
-AIDO-BBA is a reproducible computational audit workflow for separating aggregate discrimination from patient-level model dependence, resampling instability, held-out attribution, biological-process representation completeness, representation gaps, fuzzy explanatory states, and evidence-bounded measurement triage.
+AIDO-BBA is a reproducible computational audit workflow for separating aggregate discrimination from patient-level cross-model disagreement, resampling instability, held-out attribution, biological-process representation completeness, representation gaps, fuzzy explanatory allocation, and evidence-bounded measurement triage.
 
 ## Scientific scope
 
-The repository accompanies the manuscript **“A modular computational audit program for explanatory completeness, representation gaps, and patient-level ambiguity in cancer transcriptomic classification.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit states are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, or clinical directives.
+The repository accompanies the manuscript **“A modular computational audit program for explanatory completeness, representation gaps, and patient-level ambiguity in cancer transcriptomic classification.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit outputs are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, clinical directives, or demonstrated clinical utility.
+
+The 2026-10-04 repair line corrects several manuscript-facing definitions while preserving historical execution provenance. The repaired contract is documented in [`docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md`](docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md) and encoded in [`aido_bba/audit_contract.py`](aido_bba/audit_contract.py). In particular:
+
+- primary cross-model disagreement uses calibration-insensitive rank separation `D_rank`, while raw probability separation is descriptive only;
+- attribution-mass coverage is the gene-level mapped absolute attribution fraction;
+- fuzzy memberships are independent per-axis magnitude memberships and are not constrained to sum to one;
+- the historical mutually exclusive integrated patient taxonomy is retired from the repaired primary analysis;
+- measurement triage retains four source-verified overlapping computational flags, while the historical `model arbitration` action is superseded;
+- repaired statistical-family counts exclude invalid groupings tied to the retired integrated taxonomy or raw-probability model-dependence tier.
 
 ## Repository map
 
 ```text
 AIDO-BBA/
-├── aido_bba/                  # configuration, schema validation, and demo pipeline
+├── aido_bba/                  # configuration, schema validation, demo pipeline, repaired audit contract
 ├── configs/                   # example local-path configuration
 ├── notebooks/                 # sequential, reader-friendly notebooks
 ├── scripts/
@@ -18,9 +27,9 @@ AIDO-BBA/
 │   ├── recommendation/        # specificity and constrained-null audits
 │   └── external/              # METABRIC, GSE96058, and KIRC stress tests
 ├── demo/                      # deterministic self-contained execution demonstration
-├── tests/                     # schema, deterministic, and failure-state tests
+├── tests/                     # schema, deterministic, failure-state, and repair-contract tests
 ├── .github/workflows/         # continuous-integration workflow
-├── docs/                      # workflow, data layout, and output contracts
+├── docs/                      # workflow, data layout, output, and scientific repair contracts
 └── legacy/                    # original development files retained for provenance
 ```
 
@@ -92,7 +101,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-The tests cover valid inputs, missing columns, duplicate or unmatched patients, invalid endpoint labels, non-numeric expression values, reversed expression orientation, deterministic output counts and schemas, and explicit failure-state artifacts. GitHub Actions runs both the test suite and compact demonstration on pushes and pull requests.
+The tests cover valid inputs, missing columns, duplicate or unmatched patients, invalid endpoint labels, non-numeric expression values, reversed expression orientation, deterministic output counts and schemas, explicit failure-state artifacts, and the repaired manuscript-facing audit definitions. GitHub Actions runs both the test suite and compact demonstration on pushes and pull requests.
 
 ## Data availability
 
@@ -104,12 +113,15 @@ The repository does **not** redistribute TCGA, METABRIC, GSE96058, GO/MSigDB, HG
 - Patient-level model outputs are out-of-fold.
 - TreeSHAP is computed on held-out samples and checked for exact additivity.
 - Process reconstruction retains an explicit unmapped residual.
+- Cross-model disagreement in the repaired manuscript is represented primarily by `D_rank`, not a hard raw-probability state.
+- Fuzzy explanatory memberships are independent per-axis magnitudes; overlapping high memberships are valid by construction.
+- Measurement-triage flags are overlapping computational audit outputs, not patient-management recommendations.
 - External analyses retrain compatible models and are replacement stress tests, not frozen-model validation.
 - Generated results, large matrices, and patient-level reports are ignored by Git by default.
 
-## Citation
+## Citation and release status
 
-See [`CITATION.cff`](CITATION.cff). Add the archival DOI after the tagged release is deposited.
+See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The current repair branch targets v1.1.0, but no v1.1.0 tag, GitHub release, or archival DOI should be treated as final until release conformance is explicitly closed.
 
 ## License
 
