@@ -1,10 +1,10 @@
 # AIDO-BBA: modular black-box audit for cancer transcriptomic classification
 
-AIDO-BBA is a reproducible computational audit workflow for separating aggregate discrimination from patient-level cross-model disagreement, resampling instability, held-out attribution, biological-process representation completeness, representation gaps, fuzzy explanatory allocation, and evidence-bounded measurement triage.
+AIDO-BBA is a reproducible computational audit workflow for separating aggregate discrimination from patient-level cross-model rank disagreement, resampling instability, held-out attribution, biological-process representation completeness, representation gaps, fuzzy explanatory allocation, and evidence-bounded audit follow-up triage.
 
 ## Scientific scope
 
-The repository accompanies the manuscript **“A modular computational audit framework for black-box transcriptomic classifiers: patient-level disagreement, explanatory completeness, and representation gaps.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit outputs are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, clinical directives, or demonstrated clinical utility.
+The repository accompanies the manuscript **“A modular computational audit framework for high-dimensional transcriptomic classifiers: patient-level disagreement, explanatory completeness, and representation gaps.”** The primary implementation uses TCGA-BRCA stage classification. METABRIC, GSE96058, and TCGA-KIRC are replacement stress tests. Audit outputs are computational descriptors—not biological subtypes, mechanisms, diagnostic entities, clinical directives, or demonstrated clinical utility.
 
 The 2026-10-04 repair line corrects several manuscript-facing definitions while preserving historical execution provenance. The repaired contract is documented in [`docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md`](docs/SCIENTIFIC_REPAIR_CONTRACT_2026-10-04.md) and encoded in [`aido_bba/audit_contract.py`](aido_bba/audit_contract.py). In particular:
 
@@ -12,7 +12,7 @@ The 2026-10-04 repair line corrects several manuscript-facing definitions while 
 - attribution-mass coverage is the gene-level mapped absolute attribution fraction;
 - fuzzy memberships are independent per-axis magnitude memberships and are not constrained to sum to one;
 - the historical mutually exclusive integrated patient taxonomy is retired from the repaired primary analysis;
-- measurement triage retains four source-verified overlapping computational flags, while the historical `model arbitration` action is superseded;
+- audit follow-up triage retains four source-verified overlapping computational flags, while the historical `model arbitration` action is superseded;
 - repaired statistical-family counts exclude invalid groupings tied to the retired integrated taxonomy or raw-probability model-dependence tier.
 
 ## Repository map
@@ -115,14 +115,14 @@ The repository does **not** redistribute TCGA, METABRIC, GSE96058, GO/MSigDB, HG
 - Process reconstruction retains an explicit unmapped residual.
 - Cross-model disagreement in the repaired manuscript is represented primarily by `D_rank`, not a hard raw-probability state.
 - Fuzzy explanatory memberships are independent per-axis magnitudes; overlapping high memberships are valid by construction.
-- Measurement-triage flags are overlapping computational audit outputs, not patient-management recommendations.
+- Audit follow-up flags are overlapping computational outputs, not patient-management recommendations.
 - External analyses retrain compatible models and are replacement stress tests, not frozen-model validation.
 - Generated results, large matrices, and patient-level reports are ignored by Git by default.
 
 ## Citation and release status
 
-See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The repaired scientific line is integrated into `main` and is covered by passing continuous integration. Metadata target v1.1.0, but no v1.1.0 tag, GitHub release, or archival DOI should be treated as final until those release objects are explicitly created and verified.
+See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The repaired scientific line is integrated into `main`, metadata target v1.1.0, and release-finalization notes are maintained in [`RELEASE_NOTES_v1.1.0.md`](RELEASE_NOTES_v1.1.0.md). A v1.1.0 tag, GitHub Release, and archival DOI must be treated as final only after those release objects are explicitly created and verified.
 
 ## License
 
-The current repository is provided for personal evaluation under the terms in [`LICENSE`](LICENSE). Replace this with an approved open-source license before describing the repository as open source.
+The current repository is provided for personal evaluation under the terms in [`LICENSE`](LICENSE). Do not describe the repository as open source unless and until an approved open-source license replaces the current terms.
