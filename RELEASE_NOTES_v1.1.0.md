@@ -33,4 +33,4 @@ The public release validates the software contract, code organization, metadata,
 
 ## Archival note
 
-Historical v1.0.1 remains immutable provenance. v1.1.0 should be cited as the repaired scientific-contract release only after the GitHub tag/release and corresponding archival record are created and verified.
+Historical v1.0.1 remains immutable provenance. The [GitHub v1.1.0 Release](https://github.com/kensinro/AIDO-BBA/releases/tag/v1.1.0) was published on 2026-10-05 and the `v1.1.0` tag resolves to commit `7dabd582e80600024e8c19988249541e2a2d4c79`; the GitHub release and tag are verified. GitHub release verification does **not** constitute independent verification of a Zenodo deposit, DOI resolution, or binding of that deposit to the tagged commit. Any archival DOI should be cited as verified only after checking the corresponding Zenodo record. The versioned release predates this status clarification; this note updates documentation on `main` and does not alter the `v1.1.0` tag or archived historical sources.
