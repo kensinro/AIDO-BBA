@@ -121,7 +121,7 @@ The repository does **not** redistribute TCGA, METABRIC, GSE96058, GO/MSigDB, HG
 
 ## Citation and release status
 
-See [`CITATION.cff`](CITATION.cff). Historical v1.0.1 remains provenance evidence. The repaired scientific line is integrated into `main`, metadata target v1.1.0, and release-finalization notes are maintained in [`RELEASE_NOTES_v1.1.0.md`](RELEASE_NOTES_v1.1.0.md). A v1.1.0 tag, GitHub Release, and archival DOI must be treated as final only after those release objects are explicitly created and verified.
+See [`CITATION.cff`](CITATION.cff) and [`RELEASE_NOTES_v1.1.0.md`](RELEASE_NOTES_v1.1.0.md). Historical [v1.0.1](https://github.com/kensinro/AIDO-BBA/releases/tag/v1.0.1) remains provenance evidence. The repaired scientific-contract [GitHub Release v1.1.0](https://github.com/kensinro/AIDO-BBA/releases/tag/v1.1.0) was published on 2026-10-05; its `v1.1.0` Git tag resolves to commit `7dabd582e80600024e8c19988249541e2a2d4c79`. Repository metadata declares version 1.1.0. **GitHub release/tag verification does not independently verify any Zenodo archival DOI**; archival metadata and its binding to this exact release must be checked separately before a manuscript claims an independently verified archival deposit. The release contract is a software/reproducibility artifact, not independent reproduction of the manuscript-scale biological analyses.
 
 ## License
 
