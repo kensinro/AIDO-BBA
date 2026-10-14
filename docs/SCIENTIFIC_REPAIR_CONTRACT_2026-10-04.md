@@ -73,6 +73,6 @@ The repaired manuscript does not claim clinical decision support, treatment reco
 
 ## 8. Release governance
 
-Historical release v1.0.1 is preserved as superseded evidence. The repair line targets v1.1.0. No v1.1.0 tag, GitHub release, or archival DOI should be described as final until release conformance and archival deposition are explicitly verified.
+Historical release v1.0.1 remains preserved as superseded evidence. The repaired scientific-contract GitHub v1.1.0 Release was published on 2026-10-05; tag `v1.1.0` resolves to commit `7dabd582e80600024e8c19988249541e2a2d4c79` (GitHub objects checked on 2026-10-14). This is a prospective release-status clarification on `main`, not a retrospective modification of the frozen scientific evidence or historical v1.1.0 tag. Zenodo archival DOI resolution and its match to the tagged commit require separate verification; a GitHub Release alone is not evidence of Zenodo archival completion.
 
 Executable reference definitions are in `aido_bba/audit_contract.py`; regression tests are in `tests/test_audit_contract.py`.
